@@ -17,7 +17,8 @@ exporters:
   - gomod: go.opentelemetry.io/collector/exporter/otlpexporter v0.69.0
   - gomod: go.opentelemetry.io/collector/exporter/otlphttpexporter v0.69.0
   - gomod: go.opentelemetry.io/collector/exporter/loggingexporter v0.69.0
-  - gomod: github.com/jlegoff/jdot/nrinfraeexporter v0.0.1
+  - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/exporter/fileexporter v0.69.0
+  - gomod: github.com/jlegoff/jdot/nrinfraexporter 5f15d2c8f11bbecbb05d2e8e1ce535c6531eb390 
 
 processors:
   - gomod: go.opentelemetry.io/collector/processor/batchprocessor v0.69.0
@@ -40,7 +41,7 @@ receivers:
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver v0.69.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/simpleprometheusreceiver v0.69.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filelogreceiver v0.69.0
-  - gomod: github.com/jlegoff/jdot/nrinfrareceiver v0.0.1
+  - gomod: github.com/jlegoff/jdot/nrinfrareceiver 5f15d2c8f11bbecbb05d2e8e1ce535c6531eb390 
 
 
 # When adding a replace, add a comment before it to document why it's needed and when it can be removed
@@ -51,5 +52,5 @@ replaces:
   - github.com/docker/go-connections v0.4.1-0.20210727194412-58542c764a11 => github.com/docker/go-connections v0.4.0
   # see https://github.com/mattn/go-ieproxy/issues/45
   - github.com/mattn/go-ieproxy => github.com/mattn/go-ieproxy v0.0.1
-  - github.com/jlegoff/jdot/nrinfrareceiver => /Users/jlegoff/code/jdot/nrinfrareceiver
-  - github.com/jlegoff/jdot/nrinfraeexporter => /Users/jlegoff/code/jdot/nrinfraexporter
+    #  - github.com/jlegoff/jdot/nrinfrareceiver => /Users/jlegoff/code/jdot/nrinfrareceiver
+    # - github.com/jlegoff/jdot/nrinfraeexporter => /Users/jlegoff/code/jdot/nrinfraexporter
