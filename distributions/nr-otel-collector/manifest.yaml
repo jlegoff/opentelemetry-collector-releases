@@ -18,7 +18,7 @@ exporters:
   - gomod: go.opentelemetry.io/collector/exporter/otlphttpexporter v0.69.0
   - gomod: go.opentelemetry.io/collector/exporter/loggingexporter v0.69.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/exporter/fileexporter v0.69.0
-  - gomod: github.com/jlegoff/jdot/nrinfraexporter 5f15d2c8f11bbecbb05d2e8e1ce535c6531eb390 
+  - gomod: github.com/jlegoff/jdot/nrinfraexporter 563d710ca7d21935c29f5150c2c62484246a1d7c
 
 processors:
   - gomod: go.opentelemetry.io/collector/processor/batchprocessor v0.69.0
@@ -41,7 +41,7 @@ receivers:
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver v0.69.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/simpleprometheusreceiver v0.69.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filelogreceiver v0.69.0
-  - gomod: github.com/jlegoff/jdot/nrinfrareceiver 5f15d2c8f11bbecbb05d2e8e1ce535c6531eb390 
+  - gomod: github.com/jlegoff/jdot/nrinfrareceiver 563d710ca7d21935c29f5150c2c62484246a1d7c
 
 
 # When adding a replace, add a comment before it to document why it's needed and when it can be removed
